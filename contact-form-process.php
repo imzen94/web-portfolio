@@ -1,4 +1,8 @@
+
+
 <?php
+
+/*
 if (isset($_POST['Email'])) {
 
     $email_to = "imzen94@gmail.com";
@@ -74,4 +78,9 @@ if (isset($_POST['Email'])) {
 
 <?php
 }
+
+*/
 ?>
+
+
+

@@ -56,3 +56,13 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+
+function notice() {
+    var pop = document.getElementById("message-wrap");
+    pop.style.display="block";
+}
+
+function closeNotice() {
+    var pop = document.getElementById("message-wrap");
+    pop.style.display="none";
+}

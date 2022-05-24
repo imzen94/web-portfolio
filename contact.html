@@ -34,24 +34,24 @@
                 <a id="email-link" href="mailto: kelseylee.lws@gmail.com" target="_blank">kelseylee.lws@gmail.com</a>
               </div>
 
-              <form id="contact-form" method="post" action="contact-form-process.php">
+              <form id="contact-form" method="post" action="javascript:void(0);"><!--action="contact-form-process.php"-->
             
                 <div class="form-group">
                     <label for="Name" class="form-label">Your name</label>
-                    <input type="text" id="Name" name="Name" class="form-control" required>
+                    <input type="text" id="Name" name="Name" class="form-control" >
                 </div>
         
                 <div class="form-group">
                     <label for="Email" class="form-label">Your email address</label>
-                    <input type="email" id="Email" name="Email" class="form-control" required>
+                    <input type="email" id="Email" name="Email" class="form-control" >
                 </div>
         
                 <div class="form-group">
                     <label for="Message" class="form-label">Your message</label>
-                    <textarea id="Message" name="Message" class="form-control" rows="5" cols="50" maxlength="3000" required></textarea>
+                    <textarea id="Message" name="Message" class="form-control" rows="5" cols="50" maxlength="3000" ></textarea>
                 </div>
         
-                <button type="submit" id="send-email" class="form-button">Send Message</button>
+                <button type="submit" id="send-email" class="form-button" onclick="notice()" >Send Message</button>
 
               </form>
 
@@ -65,23 +65,27 @@
                 <a href="https://github.com/imzen94" target="_blank" class="icon-link"><img class="icon" src="./img/github-8-512.png"/></a>
                 
               </div>
-
-              <!--
-                <a href="https://www.linkedin.com/in/wai-sze-lee-17374a232/" target="_blank" class="icon-link"><img class="icon" src="./img/linkedin-3-512.png"/></a>
-                
-                <a href="https://github.com/imzen94" target="_blank" class="icon-link"><img class="icon" src="./img/github-8-512.png"/></a>
-              -->
-              
-              
             </div>
 
           </div>
- 
-            
+
+          <div id="message-wrap">
+            <div class="message-inner">
+              <button type="submit" class="close-btn" onclick="closeNotice()" >x</button>
+              <div class="message">
+                  <p>Github Pages does not support server side programs, please send email to me directly. Thank you!</p>
+              </div>
+            </div>
+            <div class="bg-overlay"></div>
+         </div>
+
         </main>
             
 
         <script src="main.js"></script>
+        
+
+      
 
 
     </body>
